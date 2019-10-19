@@ -1,33 +1,22 @@
-# My first Python application
+# My second Python application
 
-# Define variables for LastName and FirstName
+
+# Variables (must be declared BEFORE using them)
+# ---------
+
+# Define variables for data (LastName and FirstName)
 LastName = ""
 FirstName = ""
 
-# Say Hello to user
-print("Bonjour humain, veuillez vous identifier afin que je puisse interagir avec vous.")
 
-# While LastName or FirstName are empty
-while (LastName == "" or FirstName == ""):
+# Methods (must be declared BEFORE using them)
+# -------
 
-    # Print a blank line
-    print()
-
-    # Ask for names if they are empty
-    # and check if an error occurs
-    DataError = GetNames()
-
-    # Show result 
-    ShowResult(DataError)
-
-
-# Methods
-
-def GetNames():
+def GetData():
     """ 
-        Get First and Last names
+        Get data (First and Last names)
 
-        :return: returns if an error is encoutered
+        :return: returns an error in data if appropriate
             - "" if no error
             - "LF" if LastName and FirstName are empty
             - "L" if only LastName is empty
@@ -78,4 +67,35 @@ def ShowResult(ErrorMessage):
         # Both names are not empty
         # Say welcome
         print()
+        # By using string concatenation (+)
+        print("Enchanté " + FirstName + " " + LastName + ", je te souhaite une belle journée.")
+        # By using print separator (,)
         print("Enchanté", FirstName, LastName, ", je te souhaite une belle journée.")
+        # By using string placeholders (%)
+        print(
+            "Enchanté %s %s, je te souhaite une belle journée." 
+            % (FirstName, LastName))
+        # By using string formating ({} and .format())
+        print(
+            "Enchanté {0} {1}, je te souhaite une belle journée." 
+            .format(FirstName, LastName))
+
+
+# Application
+# -----------
+
+# Say Hello to user
+print("Bonjour humain, veuillez vous identifier afin que je puisse interagir avec vous.")
+
+# While LastName or FirstName are empty
+while (LastName == "" or FirstName == ""):
+
+    # Print a blank line
+    print()
+
+    # Ask for names if they are empty
+    # and check if an error occurs
+    DataError = GetData()
+
+    # Show result 
+    ShowResult(DataError)
