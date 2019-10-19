@@ -11,5 +11,5 @@ Faire une application qui :
 Consignes :
 - Tous les nommages (méthodes, propriétés, variables, classes, etc.) doivent être en anglais
 - Le code doit être commenté et aéré (lignes blanches)
-- Utiliser une fonction (def) pour la saisie des informations (nom et prénom)
-- Utiliser une fonction (def) avec un paramètre pour afficher le résultat de la saisie (Enchanté... ou le message d'erreur)
+- Utiliser une méthode (def) pour la saisie des informations (nom et prénom), tester une erreur éventuelle et retourner le résultat
+- Utiliser une méthode (def) avec un paramètre (erreur ou pas) pour afficher le résultat de la saisie (Enchanté... ou le message d'erreur)

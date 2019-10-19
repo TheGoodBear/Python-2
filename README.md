@@ -1,32 +1,14 @@
-# Formation Python étape 1
+# Formation Python étape 2
 
     Notions abordées :
     
-    - Spécifications :
-        - Compéhension d'un contexte
-    
-    - IDE :
-        - Console / IDLE
-        - VS Code
-        - PyCharm
-        - SublimeText
-    
-    - Architecture logicielle
-        - Organisation d'un projet (dossiers, fichiers .py)
-        - Premier programme
-        - Déroulement séquentiel
-        - Indentation
-        - Nommage
-        - Commentaires
+    - Architecture logicielle :
+        - Commentaires avancés (docstrings)
 
     - Langage :
-        - Variables et portée
-        - Méthode (def) avec et sans paramètre (Fonction/Procédure)
-        - Test (if, elif, else)
-        - Boucle (while)
-        - Opérateurs de comparaison (==)
-        - Opérateurs logiques (and, or)
-        - Interactions de base (print, input)
+        - Variables globales
+        - Méthode (def) avec et sans paramètre (Fonction/Procédure) et avec retour (return)
+        - Test (if, else)
 
 # Énoncé du sujet
 
