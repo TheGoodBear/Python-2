@@ -29,18 +29,10 @@ def GetData():
     global FirstName
 
     # Ask for names if they are empty
-    if (FirstName == ""):
-        FirstName = input("Veuillez entrer votre prénom : ")
-    if (LastName == ""):
-        LastName = input("Veuillez entrer votre nom : ")
+    # TODO
 
     # Check if names are empty
-    if (LastName == "" and FirstName == ""):
-        return "LF"
-    elif (LastName == ""):
-        return "L"
-    elif (FirstName == ""):
-        return "F"
+    # TODO
 
 
 def ShowResult(ErrorMessage):
@@ -56,29 +48,21 @@ def ShowResult(ErrorMessage):
     # Check for an error message
     if (ErrorMessage == "LF"):
         # Missing both names
-        print("Le prénom et le nom entrés sont vides, veuillez recommencer.")
+        # TODO
+        pass
     elif (ErrorMessage == "L"):
         # Missing LastName
-        print("Le nom entré est vide, veuillez compléter.")
+        # TODO
+        pass
     elif (ErrorMessage == "F"):
         # Missing FirstName
-        print("Le prénom entré est vide, veuillez compléter.")
+        # TODO
+        pass
     else:
         # Both names are not empty
         # Say welcome
-        print()
-        # By using string concatenation (+)
-        print("Enchanté " + FirstName + " " + LastName + ", je te souhaite une belle journée.")
-        # By using print separator (,)
-        print("Enchanté", FirstName, LastName, ", je te souhaite une belle journée.")
-        # By using string placeholders (%)
-        print(
-            "Enchanté %s %s, je te souhaite une belle journée." 
-            % (FirstName, LastName))
-        # By using string formating ({} and .format())
-        print(
-            "Enchanté {0} {1}, je te souhaite une belle journée." 
-            .format(FirstName, LastName))
+        # TODO
+        pass
 
 
 # Application
