@@ -2,8 +2,14 @@
 
     Notions abordées :
     
+    - Spécifications : NA
+    
+    - IDE : NA
+    
     - Architecture logicielle :
         - Commentaires avancés (docstrings)
+        
+    - Données : NA
 
     - Langage :
         - Variables globales
